@@ -1,14 +1,14 @@
-import { AppointmentBookingWeeksTable } from "@/components/appointment-booking/AppointmentBookingWeeksTable";
-import { AppointmentDialog } from "@/components/appointment-booking/AppointmentDialog";
-import { SendDailyScheduleDialog } from "@/components/appointment-booking/SendDailyScheduleDialog";
+import { AppointmentBookingWeeksTable } from "@/components/admin/appointment-booking/AppointmentBookingWeeksTable";
+import { AppointmentDialog } from "@/components/admin/appointment-booking/AppointmentDialog";
+import { SendDailyScheduleDialog } from "@/components/admin/appointment-booking/SendDailyScheduleDialog";
 import {
   days,
   initialSlots,
   statusColors,
   statusText,
   weeks,
-} from "@/constants/AppointmentBooking/AppointmentBooking";
-import { useAppointmentBooking } from "@/hooks/useAppointmentBooking";
+} from "@/constants/admin/appointment-booking/AppointmentBooking";
+import { useAppointmentBooking } from "@/hooks/admin/useAppointmentBooking";
 
 export function AppointmentBookingPage() {
   const {

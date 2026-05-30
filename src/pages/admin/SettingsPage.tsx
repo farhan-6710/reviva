@@ -1,5 +1,5 @@
-import { SettingsSectionCard } from "@/components/settings/SettingsSectionCard";
-import { useSettingsPreferences } from "@/hooks/useSettingsPreferences";
+import { SettingsSectionCard } from "@/components/admin/settings/SettingsSectionCard";
+import { useSettingsPreferences } from "@/hooks/admin/useSettingsPreferences";
 
 export function SettingsPage() {
   const { sections, isToggleEnabled, setToggleEnabled } =

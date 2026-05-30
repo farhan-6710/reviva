@@ -1,6 +1,6 @@
-import { SessionActivityGraph } from "@/components/analytics/SessionActivityGraph";
-import { analyticsStats } from "@/constants/Analytics/sessionActivity";
-import type { AnalyticsStatTrend } from "@/types/Analytics/types";
+import { SessionActivityGraph } from "@/components/admin/analytics/SessionActivityGraph";
+import { analyticsStats } from "@/constants/admin/analytics/sessionActivity";
+import type { AnalyticsStatTrend } from "@/types/admin/analytics/types";
 import { ArrowDown, ArrowUp } from "lucide-react";
 
 function Trend({

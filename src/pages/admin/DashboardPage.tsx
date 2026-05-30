@@ -1,6 +1,6 @@
-import { dashboardStats } from "@/constants/dashboard";
-import NeedsAttention from "@/components/dashboard/NeedsAttention";
-import TopPatients from "@/components/dashboard/TopPatients";
+import { dashboardStats } from "@/constants/admin/dashboard";
+import NeedsAttention from "@/components/admin/dashboard/NeedsAttention";
+import TopPatients from "@/components/admin/dashboard/TopPatients";
 import { ArrowUp } from "lucide-react";
 
 function Trend({ delta, label }: { delta: string; label: string }) {

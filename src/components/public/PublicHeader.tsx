@@ -34,7 +34,7 @@ export function PublicHeader() {
         </nav>
 
         <Button asChild className="rounded-full">
-          <Link to="/admin/dashboard">Staff login</Link>
+          <Link to="/admin/dashboard">Team login</Link>
         </Button>
       </div>
     </header>

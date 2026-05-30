@@ -1,13 +1,14 @@
 import { createBrowserRouter, Navigate } from "react-router";
 
-import { PublicLayout } from "./layouts/PublicLayout";
-import { RootLayout } from "./layouts/RootLayout";
+import { ProtectedRoute } from "./components/auth/ProtectedRoute";
+import { AdminLayout } from "./layouts/admin/AdminLayout";
+import { PublicLayout } from "./layouts/public/PublicLayout";
 import { DashboardPage } from "./pages/admin/DashboardPage";
 import { AnalyticsPage } from "./pages/admin/AnalyticsPage";
-import { AppointmentBookingPage } from "./pages/admin/AppointmentBookingPage";
 import { ProfilePage } from "./pages/admin/ProfilePage";
 import { ReportsPage } from "./pages/admin/ReportsPage";
 import { SettingsPage } from "./pages/admin/SettingsPage";
+import { AuthPage } from "./pages/auth/AuthPage";
 import { AboutPage } from "./pages/public/AboutPage";
 import { HomePage } from "./pages/public/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
@@ -21,18 +22,23 @@ export const router = createBrowserRouter([
       { path: "about", element: <AboutPage /> },
     ],
   },
+  { path: "/auth", element: <AuthPage /> },
   {
     path: "/admin",
-    element: <RootLayout />,
+    element: <ProtectedRoute />,
     children: [
-      { index: true, element: <Navigate to="dashboard" replace /> },
-      { path: "dashboard", element: <DashboardPage /> },
-      { path: "analytics", element: <AnalyticsPage /> },
-      { path: "reports", element: <ReportsPage /> },
-      { path: "settings", element: <SettingsPage /> },
-      { path: "profile", element: <ProfilePage /> },
-      { path: "appointments-management", element: <AppointmentBookingPage /> },
-      { path: "*", element: <NotFoundPage /> },
+      {
+        element: <AdminLayout />,
+        children: [
+          { index: true, element: <Navigate to="dashboard" replace /> },
+          { path: "dashboard", element: <DashboardPage /> },
+          { path: "analytics", element: <AnalyticsPage /> },
+          { path: "reports", element: <ReportsPage /> },
+          { path: "settings", element: <SettingsPage /> },
+          { path: "profile", element: <ProfilePage /> },
+          { path: "*", element: <NotFoundPage /> },
+        ],
+      },
     ],
   },
   { path: "*", element: <NotFoundPage /> },

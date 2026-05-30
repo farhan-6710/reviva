@@ -1,13 +1,16 @@
 import { RouterProvider } from "react-router";
 
-import { ThemePreferenceProvider } from "./providers/ThemePreferenceProvider";
+import { AuthProvider } from "./providers/AuthProvider";
+import { ThemePreferenceProvider } from "./providers/admin/ThemePreferenceProvider";
 import { router } from "./router";
 
 function App() {
   return (
-    <ThemePreferenceProvider>
-      <RouterProvider router={router} />
-    </ThemePreferenceProvider>
+    <AuthProvider>
+      <ThemePreferenceProvider>
+        <RouterProvider router={router} />
+      </ThemePreferenceProvider>
+    </AuthProvider>
   );
 }
 

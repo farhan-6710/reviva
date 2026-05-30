@@ -1,6 +1,6 @@
-import { ReportStatCards } from "@/components/reports/ReportStatCards";
-import { ReportsTable } from "@/components/reports/ReportsTable";
-import { reportStats } from "@/constants/Reports/reports";
+import { ReportStatCards } from "@/components/admin/reports/ReportStatCards";
+import { ReportsTable } from "@/components/admin/reports/ReportsTable";
+import { reportStats } from "@/constants/admin/reports/reports";
 
 export function ReportsPage() {
   return (
