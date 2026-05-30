@@ -8,6 +8,7 @@ import type {
   SlotPatient,
   StatusKey,
 } from "../types/types";
+import { compareAppointmentTimes } from "./appointmentScheduleUtils";
 import { getDayLabel } from "./calendarUtils";
 
 function getMonthDateRange(year: number, month: number) {
@@ -60,7 +61,7 @@ export function appointmentsToSlots(
       date,
       day: getDayLabel(year, month, date),
       patients: patients.sort((a, b) =>
-        a.appointmentTime.localeCompare(b.appointmentTime),
+        compareAppointmentTimes(a.appointmentTime, b.appointmentTime),
       ),
     }));
 }

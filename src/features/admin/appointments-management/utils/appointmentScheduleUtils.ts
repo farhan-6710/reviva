@@ -1,4 +1,4 @@
-import { format } from "date-fns";
+import { format, isValid, parse } from "date-fns";
 
 import {
   APPOINTMENT_AVAILABLE_TIMES,
@@ -16,6 +16,27 @@ export function normalizeAppointmentTime(time: string): string {
   );
 
   return match ?? trimmed;
+}
+
+function appointmentTimeSortKey(time: string): number {
+  const normalized = normalizeAppointmentTime(time);
+  const slotIndex = APPOINTMENT_AVAILABLE_TIMES.indexOf(normalized);
+
+  if (slotIndex >= 0) {
+    return slotIndex;
+  }
+
+  const parsed = parse(normalized, "h:mm a", new Date(2000, 0, 1));
+
+  if (isValid(parsed)) {
+    return parsed.getHours() * 60 + parsed.getMinutes();
+  }
+
+  return Number.MAX_SAFE_INTEGER;
+}
+
+export function compareAppointmentTimes(a: string, b: string): number {
+  return appointmentTimeSortKey(a) - appointmentTimeSortKey(b);
 }
 
 export function formatDateAndTimeLabel(

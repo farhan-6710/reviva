@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 
 import { CALENDAR_DAY_LABELS } from "../constants/calendar";
 import type { Slot, StatusKey, Week } from "../types/types";
+import { compareAppointmentTimes } from "../utils/appointmentScheduleUtils";
 import {
   formatMonthDayLabel,
   getDayLabel,
@@ -119,7 +120,14 @@ export function AppointmentsManagementWeeksTable({
 
                   <div className="mt-3 flex flex-1 flex-col gap-1.5">
                     {hasPatients ? (
-                      slot?.patients.map((patient) => (
+                      [...(slot?.patients ?? [])]
+                        .sort((a, b) =>
+                          compareAppointmentTimes(
+                            a.appointmentTime,
+                            b.appointmentTime,
+                          ),
+                        )
+                        .map((patient) => (
                         <button
                           key={patient.id}
                           type="button"
