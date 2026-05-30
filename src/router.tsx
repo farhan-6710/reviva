@@ -12,6 +12,7 @@ import { AuthPage } from "./pages/auth/AuthPage";
 import { AboutPage } from "./pages/public/AboutPage";
 import { HomePage } from "./pages/public/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { AppointmentsManagementPage } from "./features/admin/appointments-management/pages/AppointmentsManagementPage";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
         children: [
           { index: true, element: <Navigate to="dashboard" replace /> },
           { path: "dashboard", element: <DashboardPage /> },
+          { path: "appointments-management", element: <AppointmentsManagementPage /> },
           { path: "analytics", element: <AnalyticsPage /> },
           { path: "reports", element: <ReportsPage /> },
           { path: "settings", element: <SettingsPage /> },
