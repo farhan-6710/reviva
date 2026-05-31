@@ -9,6 +9,7 @@ import { ReportsPage } from "@/features/admin/reports/pages/ReportsPage";
 import { SettingsPage } from "@/features/admin/settings/pages/SettingsPage";
 import { NotFoundPage } from "@/features/not-found/pages/NotFoundPage";
 import { AboutPage } from "@/features/public/about/pages/AboutPage";
+import { ServicesPage } from "@/features/public/services/pages/ServicesPage";
 import { AuthPage } from "@/features/public/auth/pages/AuthPage";
 import { HomePage } from "@/features/public/home/pages/HomePage";
 import { AdminLayout } from "@/shared/layouts/admin/AdminLayout";
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
     element: <PublicLayout />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: "services", element: <ServicesPage /> },
       { path: "about", element: <AboutPage /> },
     ],
   },

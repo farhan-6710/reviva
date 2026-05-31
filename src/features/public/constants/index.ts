@@ -67,6 +67,7 @@ export const aboutContent = {
 
 export const publicNavLinks = [
   { label: "Home", to: "/" },
+  { label: "Services", to: "/services" },
   { label: "About", to: "/about" },
   { label: "Staff portal", to: "/admin/dashboard" },
 ] as const;

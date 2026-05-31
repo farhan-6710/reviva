@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router";
-import { Menu, Search } from "lucide-react";
+import { Menu, Moon, Search, Sun } from "lucide-react";
 import Sidebar from "@/features/admin/shell/components/Sidebar";
 import { Button } from "@/shared/ui/button";
 import { Switch } from "@/shared/ui/switch";
@@ -58,12 +58,15 @@ export function AdminLayout() {
               </div>
 
               <div className="ml-auto flex items-center gap-3">
-                <Switch
-                  checked={isDarkMode}
-                  onCheckedChange={setDarkMode}
-                  aria-label="Toggle dark mode"
-                  className="cursor-pointer"
-                />
+                <div className="flex items-center gap-2">
+                  <Sun className="size-4 text-muted-foreground" />
+                  <Switch
+                    checked={isDarkMode}
+                    onCheckedChange={setDarkMode}
+                    aria-label="Toggle dark mode"
+                  />
+                  <Moon className="size-4 text-muted-foreground" />
+                </div>
                 <Link
                   to="/admin/profile"
                   className={cn(

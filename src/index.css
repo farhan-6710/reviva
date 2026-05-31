@@ -110,11 +110,10 @@
   --card: oklch(16.268% 0.01374 44.477);
   --popover: oklch(0.14 0.018 42);
   --muted: oklch(0.23 0.02 42); /* +4L above card */
-  --accent: oklch(0.22 0.024 42); /* hover/pressed states */
+  --accent: oklch(0.72 0.11 70); /* Caramel Gold */
+  --accent-foreground: oklch(0.15 0.04 45); /* Deep Espresso */
   --border: oklch(0.28 0.02 40);
-  --input: oklch(
-    0.34 0.032 42
-  ); /* input borders — visible above card/popover */
+  --input: oklch(0.34 0.032 42); /* input borders — visible above card/popover */
 
   /* ── Sidebar: one stop darker than bg ── */
   --sidebar: oklch(15.688% 0.01139 39.451);
@@ -127,7 +126,6 @@
   --card-foreground: oklch(0.9096 0.0343 71.64);
   --popover-foreground: oklch(0.9096 0.0343 71.64);
   --muted-foreground: oklch(0.62 0.025 75);
-  --accent-foreground: oklch(0.88 0.018 78);
   --sidebar-foreground: oklch(0.9 0.018 78);
 
   /* ── Primary: golden caramel (unchanged, it was perfect) ── */
