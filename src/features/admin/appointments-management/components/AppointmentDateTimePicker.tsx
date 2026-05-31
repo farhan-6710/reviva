@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from "react";
 import { format } from "date-fns";
 import { CalendarIcon, ChevronDown, Clock3 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/shared/ui/button";
+import { Calendar } from "@/shared/ui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
+} from "@/shared/ui/popover";
+import { cn } from "@/shared/lib/utils";
 
 import { APPOINTMENT_AVAILABLE_TIMES } from "../constants/appointmentSchedule";
 import type { DateAndTimeValue } from "../types/types";

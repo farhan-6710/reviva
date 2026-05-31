@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/shared/lib/utils";
 
 import { CALENDAR_DAY_LABELS } from "../constants/calendar";
 import type { Slot, StatusKey, Week } from "../types/types";

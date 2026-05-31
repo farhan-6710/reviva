@@ -5,9 +5,9 @@ Portable calendar module for managing patient appointments. Copy this entire fol
 ## Host app requirements
 
 - React 19, React Router, Tailwind v4, shadcn/ui
-- Supabase client at `@/lib/supabase`
-- UI primitives at `@/components/ui/*`
-- `cn()` at `@/lib/utils`
+- Supabase client at `@/shared/lib/supabase`
+- UI primitives at `@/shared/ui/*`
+- `cn()` at `@/shared/lib/utils`
 - CSS tokens: `--status-upcoming`, `--status-done`, `--status-missed`
 
 ## Usage
