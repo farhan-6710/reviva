@@ -40,13 +40,13 @@ const Sidebar = ({ collapsed }: SidebarProps) => {
   return (
     <aside
       className={[
-        "hidden h-full shrink-0 border-r border-sidebar-border/80 bg-sidebar text-sidebar-foreground md:block",
+        "hidden h-full shrink-0 border-r border-border bg-sidebar text-sidebar-foreground md:block",
         "transition-[width] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]",
         collapsed ? "w-20" : "w-64",
       ].join(" ")}
     >
       <div className={"flex h-full flex-col"}>
-        <div className="flex items-center justify-center border-b border-sidebar-border/80 p-4.5">
+        <div className="flex items-center justify-center border-b border-border p-4.5">
           <Link
             to="/"
             className={

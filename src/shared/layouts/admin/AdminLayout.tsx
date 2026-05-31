@@ -32,7 +32,7 @@ export function AdminLayout() {
         <Sidebar collapsed={isSidebarCollapsed} />
 
         <div className="flex min-w-0 flex-1 flex-col">
-          <header className="border-b border-sidebar-border/80 bg-sidebar! backdrop-blur supports-backdrop-filter:bg-background/60">
+          <header className="border-b border-border bg-sidebar! backdrop-blur supports-backdrop-filter:bg-background/60">
             <div className="flex items-center gap-4 px-4 py-4 sm:px-6">
               <Button
                 type="button"
