@@ -34,7 +34,7 @@ export function DashboardPage() {
             key={stat.label}
             className="rounded-2xl border border-border bg-card p-6 shadow-sm"
           >
-            <div className="text-xs font-semibold tracking-wider text-muted-foreground">
+            <div className="text-[11px] font-semibold tracking-wider text-muted-foreground">
               {stat.label.toUpperCase()}
             </div>
             <div className="mt-4 text-3xl font-semibold tracking-tight">

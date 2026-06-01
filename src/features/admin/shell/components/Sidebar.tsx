@@ -47,12 +47,7 @@ const Sidebar = ({ collapsed }: SidebarProps) => {
     >
       <div className={"flex h-full flex-col"}>
         <div className="flex items-center justify-center border-b border-border p-4.5">
-          <Link
-            to="/"
-            className={
-              "flex items-center justify-center " + (collapsed ? "" : "gap-3")
-            }
-          >
+          <Link to="/" className="flex items-center justify-center">
             <div className="flex"></div>
             <div
               className={
@@ -65,7 +60,7 @@ const Sidebar = ({ collapsed }: SidebarProps) => {
             <img
               src={
                 isDarkMode
-                  ? "/Gemini_Generated_Image_73qdnh73qdnh73qd-removebg-preview.png"
+                  ? "/logo-dark-removebg-preview.png"
                   : "/logo-light-removebg-preview.png"
               }
               alt={`${appMeta.name} logo`}

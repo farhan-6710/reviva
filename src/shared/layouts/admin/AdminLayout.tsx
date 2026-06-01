@@ -41,7 +41,7 @@ export function AdminLayout() {
                 aria-label={
                   isSidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"
                 }
-                className="hidden size-10 items-center justify-center rounded-r-2xl border border-ring/60! md:inline-flex"
+                className="hidden size-10 items-center justify-center rounded-r-2xl border border-border! md:inline-flex"
               >
                 <Menu className="size-4" aria-hidden="true" />
               </Button>
@@ -53,7 +53,7 @@ export function AdminLayout() {
                 <input
                   type="search"
                   placeholder="Search clients or posts..."
-                  className="h-10 w-full rounded-full border border-ring/60 bg-muted/40 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground outline-none transition focus:border-ring"
+                  className="h-10 w-full rounded-full border border-border bg-muted/40 pl-9 pr-4 text-sm text-foreground placeholder:text-muted-foreground outline-none transition focus:border-ring"
                 />
               </div>
 

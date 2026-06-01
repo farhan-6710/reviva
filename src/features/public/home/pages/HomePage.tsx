@@ -88,15 +88,24 @@ export function HomePage() {
               <span className="text-accent">Move Without Limits.</span>
             </h1>
             <p className="max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Expert-led rehabilitation for sports injuries, post-operative recovery, chronic pain, and mobility restoration. Delivered with clinical precision, care, and measurable progress.
+              Expert-led rehabilitation for sports injuries, post-operative
+              recovery, chronic pain, and mobility restoration. Delivered with
+              clinical precision, care, and measurable progress.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button asChild className="rounded-full px-8 py-6 text-sm font-medium shadow-md">
+              <Button
+                asChild
+                className="rounded-full px-8 py-6 text-sm font-medium shadow-md"
+              >
                 <Link to="/services" className="flex items-center gap-2">
                   Explore Our Services <ArrowRight className="size-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="rounded-full px-8 py-6 text-sm font-medium">
+              <Button
+                asChild
+                variant="outline"
+                className="rounded-full px-8 py-6 text-sm font-medium"
+              >
                 <Link to="/about">Our Philosophy</Link>
               </Button>
             </div>
@@ -108,8 +117,12 @@ export function HomePage() {
             <div className="relative rounded-2xl border border-border/80 bg-card p-8 shadow-xl space-y-8">
               <div className="flex items-center justify-between border-b border-border/50 pb-6">
                 <div>
-                  <h3 className="text-lg font-serif font-semibold text-foreground">Reviva Clinical Standards</h3>
-                  <p className="text-xs text-muted-foreground">Patient-centric recovery metrics</p>
+                  <h3 className="text-lg font-serif font-semibold text-foreground">
+                    Reviva Clinical Standards
+                  </h3>
+                  <p className="text-xs text-muted-foreground">
+                    Patient-centric recovery metrics
+                  </p>
                 </div>
                 <span className="text-xs font-semibold tracking-wider text-accent bg-accent/10 px-2.5 py-1 rounded-md uppercase">
                   Verified
@@ -118,31 +131,57 @@ export function HomePage() {
 
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-1">
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Monthly Sessions</span>
-                  <div className="text-3xl font-serif font-bold text-foreground">180+</div>
-                  <p className="text-[10px] text-muted-foreground">Active clinical hours</p>
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
+                    Monthly Sessions
+                  </span>
+                  <div className="text-3xl font-serif font-bold text-foreground">
+                    180+
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">
+                    Active clinical hours
+                  </p>
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Satisfaction</span>
-                  <div className="text-3xl font-serif font-bold text-foreground">96%</div>
-                  <p className="text-[10px] text-muted-foreground">Patient recovery rate</p>
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
+                    Satisfaction
+                  </span>
+                  <div className="text-3xl font-serif font-bold text-foreground">
+                    96%
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">
+                    Patient recovery rate
+                  </p>
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Avg. Program</span>
-                  <div className="text-3xl font-serif font-bold text-foreground">6-8 Wks</div>
-                  <p className="text-[10px] text-muted-foreground">To full functional return</p>
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
+                    Avg. Program
+                  </span>
+                  <div className="text-3xl font-serif font-bold text-foreground">
+                    6-8 Wks
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">
+                    To full functional return
+                  </p>
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Clinical Staff</span>
-                  <div className="text-3xl font-serif font-bold text-foreground">12</div>
-                  <p className="text-[10px] text-muted-foreground">Licensed therapists</p>
+                  <span className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">
+                    Clinical Staff
+                  </span>
+                  <div className="text-3xl font-serif font-bold text-foreground">
+                    12
+                  </div>
+                  <p className="text-[10px] text-muted-foreground">
+                    Licensed therapists
+                  </p>
                 </div>
               </div>
 
               <div className="rounded-xl bg-muted/40 p-4 border border-border/50 flex items-start gap-3">
                 <CheckCircle2 className="size-5 shrink-0 text-primary mt-0.5" />
                 <p className="text-xs leading-relaxed text-muted-foreground">
-                  Every treatment plan is backed by objective clinical measurements, regular range-of-motion assessments, and functional milestone tracking.
+                  Every treatment plan is backed by objective clinical
+                  measurements, regular range-of-motion assessments, and
+                  functional milestone tracking.
                 </p>
               </div>
             </div>
@@ -158,10 +197,14 @@ export function HomePage() {
               Our Clinical Philosophy
             </span>
             <h2 className="text-3xl sm:text-4xl font-serif tracking-tight text-foreground">
-              We believe recovery should be structured, supportive, and measurable.
+              We believe recovery should be structured, supportive, and
+              measurable.
             </h2>
             <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-              At Reviva, we don't believe in temporary fixes. We look at the body as an interconnected system. By combining advanced manual therapy with progressive, evidence-based exercise prescription, we address the root cause of your physical limitations.
+              At Reviva, we don't believe in temporary fixes. We look at the
+              body as an interconnected system. By combining advanced manual
+              therapy with progressive, evidence-based exercise prescription, we
+              address the root cause of your physical limitations.
             </p>
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-sm text-foreground">
@@ -215,7 +258,11 @@ export function HomePage() {
                 Rehabilitation Programmes Tailored to Your Goals
               </h2>
             </div>
-            <Button asChild variant="outline" className="rounded-full px-6 shrink-0">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full px-6 shrink-0"
+            >
               <Link to="/services" className="flex items-center gap-2">
                 View All Services <ArrowRight className="size-4" />
               </Link>
@@ -264,13 +311,22 @@ export function HomePage() {
             Ready to Take the First Step in Your Recovery?
           </h2>
           <p className="max-w-xl mx-auto text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Schedule an assessment with one of our senior physiotherapists today. Let's build a clear, structured roadmap to restore your strength and movement.
+            Schedule an assessment with one of our senior physiotherapists
+            today. Let's build a clear, structured roadmap to restore your
+            strength and movement.
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
-            <Button asChild className="rounded-full px-8 py-6 text-sm font-medium">
+            <Button
+              asChild
+              className="rounded-full px-8 py-6 text-sm font-medium"
+            >
               <Link to="/about">About Our Clinic</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full px-8 py-6 text-sm font-medium">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full px-8 py-6 text-sm font-medium"
+            >
               <Link to="/admin/dashboard">Staff Portal</Link>
             </Button>
           </div>
